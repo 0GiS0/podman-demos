@@ -62,3 +62,13 @@ podman run -d --pod wordpress \
 -e WORDPRESS_DB_PASSWORD=Password1234! \
 wordpress
 ```
+
+```bash
+podman pod ps
+```
+
+## Usar una definición de un Pod con Podman
+
+```bash
+podman play kube --publish 8070:80 pod.yaml
+```
