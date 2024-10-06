@@ -1,5 +1,7 @@
 # Podman 🦭 vs. Docker 🐳
 
+![Podman vs Docker](docs/images/Podman%20vs%20Docker.jpeg)
+
 En este repo puedes encontrar algunos ejemplo de cómo puedes comprobar que trabajar con Podman es casi igual que trabajar con Docker.
 
 Si quieres ver estos ejemplos en acción puedes ver el vídeo en mi canal de YouTube relacionado con estos ejemplos:
