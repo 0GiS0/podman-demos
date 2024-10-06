@@ -1,11 +1,14 @@
-# Aprendido Podman
+# Podman 🦭 vs. Docker 🐳
 
-En este repo puedes encontrar los primeros comandos para interactuar con Podman. 
+En este repo puedes encontrar algunos ejemplo de cómo puedes comprobar que trabajar con Podman es casi igual que trabajar con Docker.
+
+Si quieres ver estos ejemplos en acción puedes ver el vídeo en mi canal de YouTube relacionado con estos ejemplos:
+
+[PLAVEHOLDER VIDEO]
 
 ## Cómo ejecutar tu primer contenedor
 
-En Podman se trabaja con el concepto de Pod, que es un grupo de contenedores que comparten un mismo espacio de red y volúmenes, al igual que en Kubernetes. Y dentro de este puedes tener uno o varios contenedores.
-Empecemos con uno solo.
+En Podman, al igual que en Docker, podemos ejecutar contenedores utilizando los mismos parámetros que en `docker run`:
 
 ```bash
 podman run --name web -d -p 8080:80 nginx 
@@ -20,13 +23,6 @@ Para construir tus propias imágenes, puedes hacerlo con un Containerfile, que e
 ```bash
 podman build -t solarsystem:v1 .
 podman run --name solar -d -p 8081:80 solarsystem:v1
-```
-
-
-## SQL Server 
-
-```bash
-podman run -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=Password1234!' -p 1433:1433 -v mssql-data:/var/opt/mssql --name sqlserver mcr.microsoft.com/azure-sql-edge:latest
 ```
 
 ## Podman Compose
@@ -67,8 +63,12 @@ wordpress
 podman pod ps
 ```
 
-## Usar una definición de un Pod con Podman
+## Utilizar un manifiesto de Kubernetes para crear pods
+
+Y ya por último, también es posible crear Pods de Podman utilizando manifiestos de Kubernetes:
 
 ```bash
-podman play kube --publish 8070:80 pod.yaml
+podman play kube --publish 8085:80 pod.yaml
 ```
+
+¡Nos vemos 👋🏻!
