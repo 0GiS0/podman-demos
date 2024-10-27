@@ -6,10 +6,6 @@
 
 En este repo puedes encontrar algunos ejemplo de cómo puedes comprobar que trabajar con Podman es casi igual que trabajar con Docker.
 
-Si quieres ver estos ejemplos en acción puedes ver el vídeo en mi canal de YouTube relacionado con estos ejemplos:
-
-[PLAVEHOLDER VIDEO]
-
 ## Cómo ejecutar tu primer contenedor
 
 En Podman, al igual que en Docker, podemos ejecutar contenedores utilizando los mismos parámetros que en `docker run`:
